@@ -7,8 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./change-profile.component.css']
 })
 export class ChangeProfileComponent implements OnInit {
-  username: string = 'user1';
-  email: string = 'user1@mail.com';
+  username: string = '';
+  email: string = '';
   currentPassword: string;
   newPassword: string;
   confirmNewPassword: string;
