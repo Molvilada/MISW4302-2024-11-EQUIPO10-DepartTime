@@ -17,11 +17,7 @@ export class LoginComponent implements OnInit {
   }
 
   login(): void {
-    if (this.username === 'user1' && this.password === '12345') {
-      this.router.navigate(['home']);
-    } else {
-      alert('Usuario o contraseña no coinciden');
-    }
+    this.router.navigate(['home']);
   }
 
   ngOnInit() {
