@@ -1,0 +1,74 @@
+.background-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('assets/images/Bogota.jpg');
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.degrade-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to left,
+    rgba(62, 42, 0, 0.9),
+    rgba(113, 77, 0, 0.9)
+  );
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+  width: 600px;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 32px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #3E2A00;
+  margin: 0px;
+  margin-bottom: 48px;
+  font-weight: 400;
+}
+
+.mat-mdc-form-field:first-of-type {
+  margin-bottom: 48px;
+}
+
+button {
+  margin-top: 80px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+button.btn-login.mdc-button.mdc-button--raised.mat-mdc-raised-button.mat-unthemed.mat-mdc-button-base {
+  background-color: #714D00;
+  color: #FFFDF9;
+
+}
