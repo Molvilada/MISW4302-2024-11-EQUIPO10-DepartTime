@@ -7,6 +7,7 @@ import { LoginModule } from 'src/app/login/login.module';
 import { ChangeProfileModule } from './change-profile/change-profile.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeModule } from './home/home.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HomeModule } from './home/home.module';
     AppRoutingModule,
     FormsModule,
     ChangeProfileModule,
-    HomeModule
+    HomeModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

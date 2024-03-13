@@ -1,23 +1,99 @@
-/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+$onPrimary: #3e2a00;
+$primary: #714d00;
 
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: #3E2A00;
+  color: $onPrimary;
   font-size: 16px;
+  margin: 0px;
 
-  button {
+  button,
+  .mdc-button__label {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
+  }
+
+  button.btn-login.mdc-button.mdc-button--raised.mat-mdc-raised-button.mat-unthemed.mat-mdc-button-base {
+    border-radius: 40px;
+    height: 40px;
   }
 }
 
 h1 {
   font-family: "Nunito", sans-serif;
+  font-weight: 400;
   font-optical-sizing: auto;
   font-size: 28px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #3E2A00;
+  color: #3e2a00;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.mat-mdc-form-field {
+  height: 56px;
+}
+
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+  height: 56px;
+}
+
+/* Change the border color */
+.mdc-text-field--outlined:not(.mdc-text-field--disabled)
+  .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled)
+  .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled)
+  .mdc-notched-outline__trailing {
+  border-color: $onPrimary !important;
+}
+
+/* Change the border focused color */
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused
+  .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused
+  .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused
+  .mdc-notched-outline__trailing {
+  border-color: $onPrimary !important;
+  border-width: 2px;
+}
+
+/* Change the border hover color */
+.mdc-text-field--outlined:not(.mdc-text-field--disabled):not(
+    .mdc-text-field--focused
+  ):hover
+  .mdc-notched-outline
+  .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled):not(
+    .mdc-text-field--focused
+  ):hover
+  .mdc-notched-outline
+  .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled):not(
+    .mdc-text-field--focused
+  ):hover
+  .mdc-notched-outline
+  .mdc-notched-outline__trailing {
+  border-color: $onPrimary !important;
+}
+
+.mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: $onPrimary;
+}
+
+table {
+  border-collapse: collapse; /* Elimina el espacio entre bordes */
+
+  th {
+    text-align: left;
+  }
 }
