@@ -4,25 +4,25 @@ Maqueta de la interfaz web de la aplicación DepartTime.
 ## Ejecución
 1. Instale las herramientas (TypeScript y Angular), para lo cual puede ejecutar los siguientes comandos en consola:
 
-```
- $ npm install -g typescript
- $ npm install -g @angular/cli
+```bash
+ npm install -g typescript
+ npm install -g @angular/cli
 ```
 2. Clone el repositorio de la maqueta, ejecutando el siguiente comando en la terminal de Git:
 
-```
- $ git clone https://github.com/CamiloRamirezR/MISW4302-2024-11-EQUIPO10-DepartTime.git
+```bash
+ git clone https://github.com/CamiloRamirezR/MISW4302-2024-11-EQUIPO10-DepartTime.git
 ```
 3. Acceda al directorio del proyecto que acabó de clonar.
 4. Luego de clonar el repositorio abra una terminal y ubíquese en el directorio donde clonó el proyecto. Luego ejecute en la terminal el siguiente comando:
 
-```
- $ npm install
+```bash
+ npm install
 ```
 5. Una vez instalar todas las dependencias, ejecute el proyecto ejecutando el comando:
 
-```
- $ ng serve
+```bash
+ng serve
 ```
 
 6. Acceda a la interfaz accediendo al siguiente url:
