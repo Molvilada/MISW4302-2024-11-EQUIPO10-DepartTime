@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-change-profile',
   templateUrl: './change-profile.component.html',
-  styleUrls: ['./change-profile.component.css']
+  styleUrls: ['./change-profile.component.scss']
 })
 export class ChangeProfileComponent implements OnInit {
   username: string = '';
