@@ -35,7 +35,7 @@ ng serve
 ## Requerimientos
 1. La versión de Node requerida es 16.14.2.
 
-# Autores
+## Autores
 |**Nombres**|**Apellidos**|**Correo**|
 |-----------|-------------|----------|
 |Laura Daniela|Molina Villar|ld.molina11@uniandes.edu.co|
