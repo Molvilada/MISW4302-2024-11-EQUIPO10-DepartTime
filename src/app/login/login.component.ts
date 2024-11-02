@@ -7,7 +7,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-
   username: string;
   password: string;
 
@@ -20,7 +19,5 @@ export class LoginComponent implements OnInit {
     this.router.navigate(['home']);
   }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

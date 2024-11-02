@@ -20,7 +20,5 @@ export class NavbarComponent {
     this.router.navigate(['profile']);
   }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
