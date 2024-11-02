@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './change-profile.component.html',
   styleUrls: ['./change-profile.component.scss'],
 })
-export class ChangeProfileComponent implements OnInit {
+export class ChangeProfileComponent {
   username: string = '';
   email: string = '';
   currentPassword: string;
@@ -18,8 +18,6 @@ export class ChangeProfileComponent implements OnInit {
     this.newPassword = '';
     this.confirmNewPassword = '';
   }
-
-  ngOnInit() {}
 
   changeProfile() {
     this.router.navigate(['home']);
