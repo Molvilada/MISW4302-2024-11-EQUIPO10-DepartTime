@@ -16,6 +16,4 @@ export class NavbarComponent {
   profile(): void {
     this.router.navigate(['profile']);
   }
-
-  ngOnInit() {}
 }
