@@ -4,7 +4,7 @@ $onPrimary: #3e2a00;
 $primary: #714d00;
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
   color: $onPrimary;
@@ -13,7 +13,7 @@ body {
 
   button,
   .mdc-button__label {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-weight: 300;
   }
 
@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-  font-family: "Nunito";
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-optical-sizing: auto;
   font-size: 28px;

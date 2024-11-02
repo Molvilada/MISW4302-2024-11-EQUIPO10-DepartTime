@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
   username: string;
   password: string;
 
@@ -18,6 +18,4 @@ export class LoginComponent implements OnInit {
   login(): void {
     this.router.navigate(['home']);
   }
-
-  ngOnInit() {}
 }
