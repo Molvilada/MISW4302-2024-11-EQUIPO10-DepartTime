@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
   cutData(value: number): void {
     this.showedData = this.data.slice(
       (this.page - 1) * value,
-      value * this.page,
+      value * this.page
     );
     this.totalPages = Math.ceil(this.data.length / value);
   }
@@ -65,14 +65,14 @@ export class HomeComponent implements OnInit {
     const year = this.generateAleatoryNumber(2000, 2022);
     const month = this.addCeroBeginAndEnd(this.generateAleatoryNumber(1, 12));
     const day = this.addCeroBeginAndEnd(this.generateAleatoryNumber(1, 28));
-    return (generateDate = `${day}/${month}/${year}`);
+    return `${day}/${month}/${year}`;
   }
 
   generateHour(): string {
     const aleatoryHour = this.generateAleatoryNumber(0, 23);
     const aleatoryMinutes = this.generateAleatoryNumber(0, 59);
     return `${this.addCeroBeginAndEnd(aleatoryHour)}:${this.addCeroBeginAndEnd(
-      aleatoryMinutes,
+      aleatoryMinutes
     )}`;
   }
 
