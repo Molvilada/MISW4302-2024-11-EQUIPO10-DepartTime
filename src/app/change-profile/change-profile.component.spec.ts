@@ -3,6 +3,10 @@ import { ChangeProfileComponent } from './change-profile.component';
 import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('ChangeProfileComponent', () => {
   let component: ChangeProfileComponent;
@@ -12,14 +16,21 @@ describe('ChangeProfileComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ChangeProfileComponent],
-      imports: [RouterTestingModule, FormsModule], // FormsModule es necesario si estás usando [(ngModel)] en el template
+      imports: [
+        RouterTestingModule,
+        FormsModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatButtonModule,
+        BrowserAnimationsModule,
+      ],
     }).compileComponents();
   });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ChangeProfileComponent);
     component = fixture.componentInstance;
-    router = TestBed.inject(Router); // Inyectamos Router para espiar las navegaciones
+    router = TestBed.inject(Router);
     fixture.detectChanges();
   });
 
@@ -36,7 +47,7 @@ describe('ChangeProfileComponent', () => {
   });
 
   it('should navigate to home on changeProfile', () => {
-    const navigateSpy = spyOn(router, 'navigate'); // Espiamos el método navigate del Router
+    const navigateSpy = spyOn(router, 'navigate');
     component.changeProfile();
     expect(navigateSpy).toHaveBeenCalledWith(['home']);
   });

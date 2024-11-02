@@ -31,7 +31,7 @@ describe('HomeComponent', () => {
   it('should set total pages correctly based on data length and items per page', () => {
     component.cutData(component.itemsByPage);
     expect(component.totalPages).toBe(
-      Math.ceil(component.data.length / component.itemsByPage),
+      Math.ceil(component.data.length / component.itemsByPage)
     );
   });
 
@@ -46,7 +46,7 @@ describe('HomeComponent', () => {
     component.nextPage();
     expect(component.page).toBe(2);
     expect(component.showedData.length).toBeLessThanOrEqual(
-      component.itemsByPage,
+      component.itemsByPage
     );
   });
 
@@ -55,7 +55,7 @@ describe('HomeComponent', () => {
     component.prevPage();
     expect(component.page).toBe(1);
     expect(component.showedData.length).toBeLessThanOrEqual(
-      component.itemsByPage,
+      component.itemsByPage
     );
   });
 

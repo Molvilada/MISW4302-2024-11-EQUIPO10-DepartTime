@@ -11,14 +11,14 @@ describe('NavbarComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [NavbarComponent],
-      imports: [RouterTestingModule], // Importamos RouterTestingModule para pruebas de navegación
+      imports: [RouterTestingModule],
     }).compileComponents();
   });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(NavbarComponent);
     component = fixture.componentInstance;
-    router = TestBed.inject(Router); // Inyectamos el servicio de Router para pruebas
+    router = TestBed.inject(Router);
     fixture.detectChanges();
   });
 

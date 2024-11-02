@@ -13,7 +13,7 @@
       </thead>
       <tbody>
         <tr *ngFor="let item of showedData">
-          <td class="table-body--info">{{ item.name }}</td>
+          <td class="table-body--info" [innerHTML]="item.name"></td>
           <td class="table-body--info">{{ item.date }}</td>
           <td class="table-body--info">{{ item.startPlace }}</td>
           <td class="table-body--info">{{ item.finishPlace }}</td>
