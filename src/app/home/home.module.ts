@@ -5,15 +5,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatButtonModule } from '@angular/material/button';
 
-
-
 @NgModule({
-  imports: [
-    CommonModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatButtonModule
-  ],
-  declarations: [HomeComponent]
+  imports: [CommonModule, MatTableModule, MatPaginatorModule, MatButtonModule],
+  declarations: [HomeComponent],
 })
-export class HomeModule { }
+export class HomeModule {}

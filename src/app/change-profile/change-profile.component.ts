@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-change-profile',
   templateUrl: './change-profile.component.html',
-  styleUrls: ['./change-profile.component.scss']
+  styleUrls: ['./change-profile.component.scss'],
 })
 export class ChangeProfileComponent implements OnInit {
   username: string = '';
@@ -17,10 +17,9 @@ export class ChangeProfileComponent implements OnInit {
     this.currentPassword = '';
     this.newPassword = '';
     this.confirmNewPassword = '';
-   }
-
-  ngOnInit() {
   }
+
+  ngOnInit() {}
 
   changeProfile() {
     this.router.navigate(['home']);
@@ -29,5 +28,4 @@ export class ChangeProfileComponent implements OnInit {
   cancel() {
     this.router.navigate(['home']);
   }
-
 }

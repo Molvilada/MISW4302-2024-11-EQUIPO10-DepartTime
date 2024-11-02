@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('assets/images/Bogota.jpg');
+  background-image: url("assets/images/Bogota.jpg");
   position: relative;
   width: 100%;
   background-size: cover;
@@ -47,7 +47,7 @@ h2 {
   font-size: 32px;
   line-height: 32px;
   text-transform: uppercase;
-  color: #3E2A00;
+  color: #3e2a00;
   margin: 0px;
   margin-bottom: 48px;
   font-weight: 400;
@@ -61,14 +61,12 @@ button {
   margin-top: 80px;
 }
 
-
 form {
   display: flex;
   flex-direction: column;
 }
 
 button.btn-login.mdc-button.mdc-button--raised.mat-mdc-raised-button.mat-unthemed.mat-mdc-button-base {
-  background-color: #714D00;
-  color: #FFFDF9;
-
+  background-color: #714d00;
+  color: #fffdf9;
 }

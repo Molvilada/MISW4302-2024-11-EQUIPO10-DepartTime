@@ -30,7 +30,9 @@ describe('HomeComponent', () => {
 
   it('should set total pages correctly based on data length and items per page', () => {
     component.cutData(component.itemsByPage);
-    expect(component.totalPages).toBe(Math.ceil(component.data.length / component.itemsByPage));
+    expect(component.totalPages).toBe(
+      Math.ceil(component.data.length / component.itemsByPage),
+    );
   });
 
   it('should slice data into showedData based on itemsByPage and page', () => {
@@ -43,21 +45,25 @@ describe('HomeComponent', () => {
     component.page = 1;
     component.nextPage();
     expect(component.page).toBe(2);
-    expect(component.showedData.length).toBeLessThanOrEqual(component.itemsByPage);
+    expect(component.showedData.length).toBeLessThanOrEqual(
+      component.itemsByPage,
+    );
   });
 
   it('should decrease page number and update showedData on prevPage', () => {
     component.page = 2;
     component.prevPage();
     expect(component.page).toBe(1);
-    expect(component.showedData.length).toBeLessThanOrEqual(component.itemsByPage);
+    expect(component.showedData.length).toBeLessThanOrEqual(
+      component.itemsByPage,
+    );
   });
 
   it('should update itemsByPage and call cutData when selectedValue is triggered', () => {
     const newValue = 4;
 
     const eventMock = {
-      target: { value: newValue }
+      target: { value: newValue },
     };
     spyOn(component, 'cutData');
 

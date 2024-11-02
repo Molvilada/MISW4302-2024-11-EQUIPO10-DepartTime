@@ -1,11 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
   data: any[] = [];
@@ -33,7 +31,7 @@ export class HomeComponent implements OnInit {
   cutData(value: number): void {
     this.showedData = this.data.slice(
       (this.page - 1) * value,
-      value * this.page
+      value * this.page,
     );
     this.totalPages = Math.ceil(this.data.length / value);
   }
@@ -74,7 +72,7 @@ export class HomeComponent implements OnInit {
     const aleatoryHour = this.generateAleatoryNumber(0, 23);
     const aleatoryMinutes = this.generateAleatoryNumber(0, 59);
     return `${this.addCeroBeginAndEnd(aleatoryHour)}:${this.addCeroBeginAndEnd(
-      aleatoryMinutes
+      aleatoryMinutes,
     )}`;
   }
 
