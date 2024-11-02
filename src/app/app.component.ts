@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'depart-time';
   showNavbar: boolean = true;
 
-  constructor(private router: Router) {
+  constructor(private readonly router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.showNavbar = !this.router.url.includes('login');
